@@ -14,7 +14,7 @@ For technical details, please refer to our paper on CVPR 2023:
 
 **Hidden Gems: 4D Radar Scene Flow Learning Using Cross-Modal Supervision**
 
-[Fangqiang Ding] (https://toytiny.github.io/), [Andras Palffy] (https://scholar.google.co.uk/citations?user=_IIml4sAAAAJ&hl=en), [Dariu M. Gavrila] (http://www.gavrila.net/) and [Chris Xiaoxuan Lu] (https://scholar.google.com/citations?user=idu78-EAAAAJ&hl=en)
+[Fangqiang Ding](https://toytiny.github.io/), [Andras Palffy](https://scholar.google.co.uk/citations?user=_IIml4sAAAAJ&hl=en), [Dariu M. Gavrila](http://www.gavrila.net/), [Chris Xiaoxuan Lu](https://christopherlu.github.io/)
 
 [[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[Page]](https://github.com/Toytiny/CMFlow)
 

@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Toytiny/CMFlow/blob/main/LICENSE)
 
 
-This is the official code of the **CMFlow**, a cross-modal supervised learning approach for estimating 4D radar scene flow. 
+This is the official repository of the **CMFlow**, a cross-modal supervised approach for estimating 4D radar scene flow. 
 For technical details, please refer to 
 "Hidden Gems: 4D Radar Scene Flow Learning Using Cross-Modal Supervision" (CVPR 2023) [[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[Page]](https://github.com/Toytiny/CMFlow)
 
@@ -21,6 +21,6 @@ If you find our work useful in your research, please consider citing:
   year={2023} 
 }
 ```
-<p align='center'>
-  <img src='network.png' width="1000px">
-</p>
+
+### Demo Video (Youtube)
+<p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>

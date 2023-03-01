@@ -21,7 +21,7 @@ For technical details, please refer to our paper on CVPR 2023:
 <br/>
 [Fangqiang Ding](https://toytiny.github.io/), [Andras Palffy](https://scholar.google.co.uk/citations?user=_IIml4sAAAAJ&hl=en), [Dariu M. Gavrila](http://www.gavrila.net/), [Chris Xiaoxuan Lu](https://christopherlu.github.io/)
 <br/>
-[[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://github.com/Toytiny/CMFlow)
+[[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://github.com/Toytiny/CMFlow) [[supp]](https://1drv.ms/b/s!AvZPDzFJ9E5kgX7hcw1lBLFP2r42?e=PbelSi)
 
 <p align="left">
 <img src='./src/openfig.png' width="500">
@@ -29,7 +29,7 @@ For technical details, please refer to our paper on CVPR 2023:
 
 ## News
  - [2023-02] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
- - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/abs/2203.01137).
+ - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/abs/2203.01137). Supplementary materials can be found [here](https://1drv.ms/b/s!AvZPDzFJ9E5kgX7hcw1lBLFP2r42?e=PbelSi).
 
 ## Citation
 If you find our work useful in your research, please consider citing:

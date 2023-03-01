@@ -23,7 +23,7 @@ For technical details, please refer to our paper on CVPR 2023:
 <br/>
 [[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://github.com/Toytiny/CMFlow)
 
-### Citation
+## Citation
 If you find our work useful in your research, please consider citing:
 
 ```shell
@@ -35,17 +35,21 @@ If you find our work useful in your research, please consider citing:
   year={2023} 
 }
 ```
-### Abstract 
+## Abstract 
 This work proposes a novel approach to 4D radar-based scene flow estimation via cross-modal learning. Our approach is motivated by the co-located sensing redundancy in modern autonomous vehicles. Such redundancy implicitly provides various forms of supervision cues to the radar scene flow estimation. Specifically, we introduce a multi-task model architecture for the identified cross-modal learning problem and propose loss functions to opportunistically engage scene flow estimation using multiple cross-modal constraints for effective model training. Extensive experiments show the state-of-the-art performance of our method and demonstrate the effectiveness of cross-modal supervised learning to infer more accurate 4D radar scene flow. We also show its usefulness to two subtasks - motion segmentation and ego-motion estimation. 
 
-### Qualitative results
+## Qualitative results
 Here some GIFs are provided to show our qualitative results on scene flow estimation and two subtasks, motion segmentation and ego-motion estimation.
-For more qualitative results, please refer to our demo video or paper.
+For more qualitative results, please refer to our [demo video](#demo-video) or paper.
 
 #### Scene flow
 
+<p align="center">
+<img src='./src/gif-1.gif' width="300">
+<img src='./src/gif-2.gif' width="300">
+<img src='./src/gif-3.gif' width="300">
+</p>
 
 
-
-### Demo Video (Youtube)
+## Demo Video 
 <p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>

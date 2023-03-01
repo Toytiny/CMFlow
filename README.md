@@ -41,7 +41,7 @@ This work proposes a novel approach to 4D radar-based scene flow estimation via 
 ## Method
 | ![pipeline.jpg](src/pipeline_cvpr.png) | 
 |:--:| 
-| ***Figure 1. Cross-modal supervised learning pipeline for 4D radar scene flow estimation**. The model architecture is composed of two stages (blue/orange block colours for stage 1/2) and outputs the final scene flow together with the motion segmentation and a rigid ego-motion transformation. Cross-modal supervision signals retrieved from co-located modalities are utilized to constrain outputs with various loss functions. This essentially leads to a multi-task learning problem.* |
+| ***Figure 1. Cross-modal supervised learning pipeline for 4D radar scene flow estimation**. Given two consecutive radar point clouds as the input, the model architecture, which is composed of two stages (blue/orange block colours for stage 1/2), outputs the final scene flow together with the motion segmentation and a rigid ego-motion transformation. Cross-modal supervision signals retrieved from co-located modalities are utilized to constrain outputs with various loss functions. This essentially leads to a multi-task learning problem.* |
 
 ## Qualitative results
 Here some GIFs are provided to show our qualitative results on scene flow estimation and two subtasks, motion segmentation and ego-motion estimation.

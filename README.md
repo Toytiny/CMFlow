@@ -68,8 +68,8 @@ For more qualitative results, please refer to our [demo video](#demo-video) or p
 
 #### Subtask - Ego-motion Estimation
 <p align="center">
-<img src='./src/ego-motion/gif-1.gif' width="700">
-<img src='./src/ego-motion/gif-2.gif' width="700">
+<img src='./src/ego-motion/gif-1.gif' width="600">
+<img src='./src/ego-motion/gif-2.gif' width="600">
 </p>
 
 

@@ -23,8 +23,13 @@ For technical details, please refer to our paper on CVPR 2023:
 <br/>
 [[arXiv]](https://arxiv.org/pdf/2203.01137.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://github.com/Toytiny/CMFlow)
 
+<p align="left">
+<img src='./src/openfig.png' width="600">
+</p>
+
 ## Citation
 If you find our work useful in your research, please consider citing:
+
 
 ```shell
 @inproceedings{ding2023hidden,

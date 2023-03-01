@@ -56,5 +56,12 @@ For more qualitative results, please refer to our [demo video](#demo-video) or p
 <img src='./src/motion-seg/gif-2.gif' width="840">
 </p>
 
+#### Subtask - Ego-motion Estimation
+<p align="center">
+<img src='./src/ego-motion/gif-1.gif' width="700">
+<img src='./src/ego-motion/gif-2.gif' width="700">
+</p>
+
+
 ## Demo Video 
 <p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>

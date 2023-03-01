@@ -29,7 +29,7 @@ For technical details, please refer to our paper on CVPR 2023:
 
 ## News
  - [2023-02] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
- - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/abs/2203.01137). Supplementary materials can be found [here](https://1drv.ms/b/s!AvZPDzFJ9E5kgX7hcw1lBLFP2r42?e=PbelSi).
+ - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/abs/2203.01137). Supplementary materials can be found [here](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing).
 
 ## Citation
 If you find our work useful in your research, please consider citing:
@@ -53,7 +53,7 @@ This work proposes a novel approach to 4D radar-based scene flow estimation via 
 | ***Figure 1. Cross-modal supervised learning pipeline for 4D radar scene flow estimation**. Given two consecutive radar point clouds as the input, the model architecture, which is composed of two stages (blue/orange block colours for stage 1/2), outputs the final scene flow together with the motion segmentation and a rigid ego-motion transformation. Cross-modal supervision signals retrieved from co-located modalities are utilized to constrain outputs with various loss functions. This essentially leads to a multi-task learning problem.* |
 
 ## Qualitative results
-Here are some GIFs to show our qualitative results on scene flow estimation and two subtasks, motion segmentation and ego-motion estimation. For more qualitative results, please refer to our [demo video](#demo-video) or [supplementary](https://1drv.ms/b/s!AvZPDzFJ9E5kgX7hcw1lBLFP2r42?e=PbelSi).
+Here are some GIFs to show our qualitative results on scene flow estimation and two subtasks, motion segmentation and ego-motion estimation. For more qualitative results, please refer to our [demo video](#demo-video) or [supplementary](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing).
 
 #### Scene flow
 

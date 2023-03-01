@@ -27,6 +27,9 @@ For technical details, please refer to our paper on CVPR 2023:
 <img src='./src/openfig.png' width="500">
 </p>
 
+## News
+[2023-02] Our paper is accepted by CVPR 2023
+
 ## Citation
 If you find our work useful in your research, please consider citing:
 

@@ -28,7 +28,8 @@ For technical details, please refer to our paper on CVPR 2023:
 </p>
 
 ## News
-[2023-02] Our paper is accepted by CVPR 2023
+ - [2023-02] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
+ - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/abs/2203.01137).
 
 ## Citation
 If you find our work useful in your research, please consider citing:

@@ -8,6 +8,11 @@
 ![code visitors](https://visitor-badge.glitch.me/badge?page_id=Toytiny/CMFlow)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Toytiny/CMFlow/blob/main/LICENSE)
 
+<p align="center">
+<img src='./src/gif-1.gif' width="400">
+<img src='./src/gif-2.gif' width="400">
+</p>
+
 
 This is the official repository of the **CMFlow**, a cross-modal supervised approach for estimating 4D radar scene flow. 
 For technical details, please refer to our paper on CVPR 2023:

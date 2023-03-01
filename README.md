@@ -55,6 +55,9 @@ For more qualitative results, please refer to our [demo video](#demo-video) or p
 
 
 #### Subtask - Motion Segmentation
+<p align="center">
+<img src='./src/motion-seg/gif-1.gif' width="820">
+</p>
 
 ## Demo Video 
 <p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>

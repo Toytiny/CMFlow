@@ -45,9 +45,9 @@ For more qualitative results, please refer to our [demo video](#demo-video) or p
 #### Scene flow
 
 <p align="center">
-<img src='./src/gif-1.gif' width="250">
-<img src='./src/gif-2.gif' width="250">
-<img src='./src/gif-3.gif' width="250">
+<img src='./src/gif-1.gif' width="270">
+<img src='./src/gif-2.gif' width="270">
+<img src='./src/gif-3.gif' width="270">
 </p>
 
 

@@ -49,12 +49,13 @@ For more qualitative results, please refer to our [demo video](#demo-video) or p
 <img src='./src/scene-flow/row-1/gif-2.gif' width="270">
 <img src='./src/scene-flow/row-1/gif-3.gif' width="270">
 </p>
-
 <p align="center">
 <img src='./src/scene-flow/row-2/gif-1.gif' width="270">
 <img src='./src/scene-flow/row-2/gif-2.gif' width="270">
 <img src='./src/scene-flow/row-2/gif-3.gif' width="270">
 </p>
+
+#### Subtask - Motion Segmentation
 
 ## Demo Video 
 <p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>

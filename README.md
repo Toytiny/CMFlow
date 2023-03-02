@@ -78,3 +78,7 @@ Here are some GIFs to show our qualitative results on scene flow estimation and 
 
 ## Demo Video 
 <p align="center"> <a href="https://youtu.be/PjKgznDizhI"><img src="./src/cover.png" width="80%"></a> </p>
+
+## Getting Started
+
+Our codes and models will be released by March 15th. Instructions on how to preprocess the data, train our models and run the test will be provided in [GETTING_STARTED](./src/GETTING_STARTED.md).

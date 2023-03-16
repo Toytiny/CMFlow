@@ -48,7 +48,7 @@ If you find our work useful in your research, please consider citing:
 
 ## Getting Started
 
-To find how to run our scene flow experiments, please see our intructions in [GETTING_STARTED](./src/GETTING_STARTED.md). 
+To find out how to run our scene flow experiments, please see our intructions in [GETTING_STARTED](./src/GETTING_STARTED.md). 
 
 
 ## Abstract 

@@ -238,12 +238,12 @@ def main(io_args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Radar Scene flow running')
-    parser.add_argument('--eval', action='store_false')
+    parser.add_argument('--eval', action='store_true')
     parser.add_argument('--vis', action = 'store_true')
-    parser.add_argument('--save_res', action='store_false')
+    parser.add_argument('--save_res', action='store_true')
     parser.add_argument('--dataset_path', type= str, default = '/mnt/12T/fangqiang/preprocess_res/flow_smp/')
-    parser.add_argument('--exp_name', type = str, default = 'raflow_cvpr')
-    parser.add_argument('--model', type = str, default = 'raflow')
+    parser.add_argument('--exp_name', type = str, default = 'cmflow_cvpr')
+    parser.add_argument('--model', type = str, default = 'cmflow')
     parser.add_argument('--dataset', type = str, default = 'vodDataset')
     args = parser.parse_args()
     main(args)

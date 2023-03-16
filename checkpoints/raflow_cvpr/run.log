@@ -1,0 +1,19 @@
+{'exp_name': 'raflow_cvpr', 'model': 'raflow', 'num_points': 256, 'batch_size': 16, 'val_batch_size': 8, 'epochs': 50, 'lr': 0.001, 'decay_epochs': 1, 'decay_rate': 0.9, 'cuda_device': '0', 'no_cuda': False, 'seed': 1234, 'num_workers': 8, 'eval': True, 'eval_split': 'test', 'dataset': 'vodDataset', 'train_set': 'train', 'dataset_path': '/mnt/12T/fangqiang/preprocess_res/flow_smp/', 'vis': False, 'save_res': True, 'rigid_thres': 0.15, 'vr_thres': 0.3, 'stat_thres': 0.5, 'mini_clip_len': 5, 'update_len': 5, 'load_checkpoint': False, 'model_path': ''}
+test : 2717
+###The inference speed is 0.034ms per frame###
+###The mean rne: 0.09042561387494957###
+###The mean 50-50 rne: 0.10044554054562839###
+###The mean mov_rne: 0.11423853967624704###
+###The mean stat_rne: 0.08665254141500951###
+###The mean sas: 0.7489249463802109###
+###The mean ras: 0.8998630863844421###
+###The mean epe: 0.22558416609378462###
+###The mean accs: 0.18977812919624457###
+###The mean accr: 0.38966750648779663###
+###The mean acc: 0.8465326143336235###
+###The mean miou: 0.46885911033066074###
+###The mean sen: 0.9222041528791789###
+###The mean RTE: 0.08821989377704588###
+###The mean RAE: 0.33848321989661145###
+Max memory alocation: 161.102336MB
+Max memory alocation: 161.102336MB

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../../VoD"
+		},
+		{
+			"path": "../../../../../mnt/12T/fangqiang/view_of_delft"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../RaFlow_pub"
+		},
+		{
+			"path": "../../../../../mnt/12T/fangqiang/vod"
+		},
+		{
+			"path": "../../../../../mnt/12T/fangqiang/preprocess_res"
+		}
+	],
+	"settings": {}
+}

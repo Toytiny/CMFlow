@@ -1,0 +1,3 @@
+# ninja log v5
+0	13141	1653500457713189201	/home/fangqiang/shangqi_preprocess/RAFT/alt_cuda_corr/build/temp.linux-x86_64-3.7/correlation.o	5f33434a41998bf0
+0	25140	1653500469713044602	/home/fangqiang/shangqi_preprocess/RAFT/alt_cuda_corr/build/temp.linux-x86_64-3.7/correlation_kernel.o	1d35047ca00e3014

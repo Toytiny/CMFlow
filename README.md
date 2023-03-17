@@ -6,7 +6,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2303.00462-b31b1b.svg)](https://arxiv.org/abs/2303.00462)
 [![ ](https://img.shields.io/youtube/views/PjKgznDizhI?label=YouTube&style=flat)](https://www.youtube.com/watch?v=PjKgznDizhI&feature=youtu.be) 
 ![code visitors](https://visitor-badge.glitch.me/badge?page_id=Toytiny/CMFlow)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Toytiny/CMFlow/blob/main/LICENSE)  [![GitHub](https://img.shields.io/website?label=Project%20Page&up_message=link&url=https://toytiny.github.io/publication/22-raflow-ral/index.html)](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Toytiny/CMFlow/blob/master/LICENSE)  [![GitHub](https://img.shields.io/website?label=Project%20Page&up_message=link&url=https://toytiny.github.io/publication/22-raflow-ral/index.html)](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html)
 
 <p align="center">
 <img src='./src/scene-flow/row-1/gif-1.gif' width="400">

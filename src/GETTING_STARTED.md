@@ -92,6 +92,24 @@ python preprocess/preprocess_vod.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 
 where `$ROOT_DIR$` is the path of the VoD dataset. The final scene flow samples will be saved under the `$SAVE_DIR$/flow_smp/`. The preprocessing speed might be slow because we need to infer the optical flow results with the RAFT model for training samples. Each scene flow sample is a dictinary that includes:
 
+Possible errors during preprocessing:
+
+i.  Error during reading frame pose information.
+```
+File ".../preprocess/utils/vod/frame/transformations.py", line 277, in get_world_transform
+t_odom_camera = np.array(jsons[0]["odomToCamera"], dtype=np.float32).reshape(4, 4)
+IndexError: list index out of range
+```
+This is due to the pose information missing  at the beginning of sequences. We recommend copy the pose information from the closest later frame to  
+
+
+ii. Error when FrameDataLoader loads labels.
+```
+ERROR:root:02759.txt does not exist at location: /mnt/data/fangqiang/view_of_delft/lidar/training/label_2!
+```
+ Please ignore them. These errors have no impact to our preprocessing. Because these frames (e.g., 2532-3276) are testing frames in the original dataset, thus their labels are withheld for benchmarking. Moreover, our preprocessing code doesn't use these labels loaded by FrameDataLoader, instead we use `preprocess/label_track_gt` and `preprocess/label_track_pre`.
+
+
 ```
 #Key     Dimension     Description
 ---------------------------------------------------------------------------------------------------

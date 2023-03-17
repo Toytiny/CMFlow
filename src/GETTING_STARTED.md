@@ -79,36 +79,19 @@ To run our experiments on the VoD dataset, you need to preprocess the original d
 
 To generate our scene flow samples for experiments, please follow the next steps:
 
-a. Cope the official labels (with tracking ids) to this repository as `preprocess/label_track_gt`. 
+a. **Cope the official labels (with tracking ids) to this repository as `preprocess/label_track_gt`.**
 
-b. Download the official [RAFT](https://github.com/princeton-vl/RAFT) pretrained model from [google drive](https://drive.google.com/drive/folders/1sWDsfuZ3Up38EUQt7-JDTT1HcGHuJgvT). We use the raft-small model in our work to estimate optical flow from training images. This optical flow estimation can be used to provide cross-modal supervision singals in the image aspect. Please put the downloaded model as `preprocess/utils/RAFT/raft-small.pth`
-    
+b. **Download the official [RAFT](https://github.com/princeton-vl/RAFT) pretrained model from [google drive](https://drive.google.com/drive/folders/1sWDsfuZ3Up38EUQt7-JDTT1HcGHuJgvT).**
 
-c. Running the preprocessing code using:
+We use the raft-small model in our work to estimate optical flow from training images. This optical flow estimation can be used to provide cross-modal supervision singals in the image aspect. Please put the downloaded model as `preprocess/utils/RAFT/raft-small.pth`
+
+c. **Running the preprocessing code using:**
 
 ```
 python preprocess/preprocess_vod.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 ```
 
 where `$ROOT_DIR$` is the path of the VoD dataset. The final scene flow samples will be saved under the `$SAVE_DIR$/flow_smp/`. The preprocessing speed might be slow because we need to infer the optical flow results with the RAFT model for training samples. Each scene flow sample is a dictinary that includes:
-
-Possible errors during preprocessing:
-
-i.  Error during reading frame pose information.
-```
-File ".../preprocess/utils/vod/frame/transformations.py", line 277, in get_world_transform
-t_odom_camera = np.array(jsons[0]["odomToCamera"], dtype=np.float32).reshape(4, 4)
-IndexError: list index out of range
-```
-This is due to the pose information missing  at the beginning of sequences. We recommend copy the pose information from the closest later frame to  
-
-
-ii. Error when FrameDataLoader loads labels.
-```
-ERROR:root:02759.txt does not exist at location: /mnt/data/fangqiang/view_of_delft/lidar/training/label_2!
-```
- Please ignore them. These errors have no impact to our preprocessing. Because these frames (e.g., 2532-3276) are testing frames in the original dataset, thus their labels are withheld for benchmarking. Moreover, our preprocessing code doesn't use these labels loaded by FrameDataLoader, instead we use `preprocess/label_track_gt` and `preprocess/label_track_pre`.
-
 
 ```
 #Key     Dimension     Description
@@ -122,6 +105,24 @@ gt_labels   N×3        The ground truth scene flow labels, only valid for val a
 pse_mask     N         The pseudo forground segmentation labels (from LiDAT), only valid for train. 
 pse_labels  N×3        The pseudo scene flow labels (from LiDAR), only valid for train.
 ```
+
+**Possible errors during preprocessing:**
+
+i.  Error when FrameDataLoader reads frame pose information.
+```
+File ".../preprocess/utils/vod/frame/transformations.py", line 277, in get_world_transform
+t_odom_camera = np.array(jsons[0]["odomToCamera"], dtype=np.float32).reshape(4, 4)
+IndexError: list index out of range
+```
+This is due to the pose information missing  at the beginning of sequences. We recommend copying the pose information from the closest later frame to frames lacking pose information.
+
+
+ii. Error when FrameDataLoader loads labels.
+```
+ERROR:root:02759.txt does not exist at location: /mnt/data/fangqiang/view_of_delft/lidar/training/label_2!
+```
+ Please ignore them. These errors have no impact to our preprocessing. Because these frames (e.g., 2532-3276) are testing frames in the original dataset, thus their labels are withheld for benchmarking. Moreover, our preprocessing code doesn't use these labels loaded by FrameDataLoader, instead we use `preprocess/label_track_gt` and `preprocess/label_track_pre`.
+
 
 ## 3. Model Training
 Make sure you have successfully completed all above steps before you start running code for model training. With our code, you can train three types of our models, i.e., **CMFlow**, **CMFlow (T)**, and [RaFlow](https://github.com/Toytiny/RaFlow) using scene flow samples that you generate in the last section. 

@@ -37,6 +37,8 @@ View-of-Delft-Dataset (root)
 
 ## 1. Installation
 
+> Note: our code has been tested on Ubuntu 16.04/18.04 with Python 3.7, CUDA 11.1/11.0, PyTorch 1.7. It may work for other setups, but has not been tested.
+
 Before you run our code, please follow the steps below to build up your environment. 
 
 a. Clone the repository to local

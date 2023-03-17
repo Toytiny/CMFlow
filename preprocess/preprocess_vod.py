@@ -19,6 +19,8 @@ def main(args):
     root_dir = args.root_dir
     save_dir = args.save_dir
 
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
     # path for saving all scene flow samples
     smp_path = os.path.join(save_dir, 'flow_smp')
     # path for saving optical flow visulization (from RAFT)
@@ -50,7 +52,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='preprocess')
     parser.add_argument('--root_dir', type=str, default="/mnt/12T/fangqiang/view_of_delft/", help='Path for the origial dataset.')
-    parser.add_argument('--save_dir', type=str, default='/mnt/12T/fangqiang/preprocess_res/', help='Path for saving preprocessing results')
+    parser.add_argument('--save_dir', type=str, default='/mnt/12T/fangqiang/preprocess_res/', help='Path for saving preprocessing results.')
     args = parser.parse_args()
     main(args)
 

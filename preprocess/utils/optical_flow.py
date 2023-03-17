@@ -30,15 +30,16 @@ def estimate_optical_flow(img1,img2,model):
 
 def init_raft():
 
-    parser = argparse.ArgumentParser()
+    # parser = argparse.ArgumentParser()
     
-    parser.add_argument('--model', default= "preprocess/utils/RAFT/raft-small.pth", help="restore checkpoint")
-    parser.add_argument('--path', help="dataset for evaluation")
-    parser.add_argument('--small', action='store_false', help='use small model')
-    parser.add_argument('--mixed_precision', action='store_true', help='use mixed precision')
-    parser.add_argument('--alternate_corr', action='store_true', help='use efficent correlation implementation')
-    raft_args = parser.parse_args()
-
+    # parser.add_argument('--model', default= "preprocess/utils/RAFT/raft-small.pth", help="restore checkpoint")
+    # parser.add_argument('--path', help="dataset for evaluation")
+    # parser.add_argument('--small', action='store_false', help='use small model')
+    # parser.add_argument('--mixed_precision', action='store_true', help='use mixed precision')
+    # parser.add_argument('--alternate_corr', action='store_true', help='use efficent correlation implementation')
+    # raft_args = parser.parse_args()
+    raft_args = argparse.Namespace(model = "preprocess/utils/RAFT/raft-small.pth",\
+                                    small = True,mixed_precision = False,alternate_corr = False)
     raft = RAFT(raft_args).cuda()
     raft = torch.nn.DataParallel(raft)
     raft.load_state_dict(torch.load(raft_args.model))

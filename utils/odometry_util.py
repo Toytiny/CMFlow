@@ -154,7 +154,7 @@ def so3_log(rot_matrix):
             np.float32
                 The error angle.
     """
-    rotation_vector = R.from_dcm(rot_matrix).as_rotvec()
+    rotation_vector = R.from_matrix(rot_matrix).as_rotvec()
     angle = np.linalg.norm(rotation_vector)
 
     return angle

@@ -10,7 +10,6 @@ from matplotlib import pyplot as plt
 from matplotlib.pyplot import MultipleLocator
 from scipy.spatial.transform import Rotation as R
 import matplotlib.ticker as ticker
-import constants as cst
 from utils.vis_ops import flow_xy_to_colors
 
           

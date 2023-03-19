@@ -5,7 +5,7 @@ model: cmflow
 num_points: 256
 batch_size: 16 #16 32
 val_batch_size: 8 #8 16
-epochs: 50 #30
+epochs: 60 #30
 lr: 0.001 #0.001
 decay_epochs: 1
 decay_rate: 0.9

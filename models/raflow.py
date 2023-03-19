@@ -140,8 +140,8 @@ class RaFlow(nn.Module):
         U, S, V = torch.svd(H)
         Z = torch.matmul(V,U.transpose(2,1).contiguous())
         # special reflection case
-        #d= (torch.linalg.det(Z) < 0).type(torch.int8)
-        d = torch.zeros(batch_size).type(torch.int8).cuda()
+        d= (torch.linalg.det(Z) < 0).type(torch.int8)
+        #d = torch.zeros(batch_size).type(torch.int8).cuda()
         # -1/1 
         d=d*2-1
         Vc = V.clone()

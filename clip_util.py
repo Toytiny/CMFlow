@@ -98,8 +98,8 @@ def extract_data_info_clip(seq_data, idx):
 
 def eval_one_epoch_seq(args, net, eval_loader, textio):
 
-    if not args.model in ['gl_wo','icp', 'arfnet_o']:
-        net.eval()
+    
+    net.eval()
     
     num_pcs=0 
     
@@ -109,7 +109,6 @@ def eval_one_epoch_seq(args, net, eval_loader, textio):
     seg_metric = {'acc': 0, 'miou': 0, 'sen': 0}
     pose_metric = {'RRE': 0, 'RTE': 0}
 
-    epe_xyz = {'x': [], 'y':[], 'z':[]}
 
     seq_len = eval_loader.dataset.mini_clip_len    
     batch_size = eval_loader.batch_size
@@ -143,12 +142,9 @@ def eval_one_epoch_seq(args, net, eval_loader, textio):
                 for metric in sf_metric:
                     sf_metric[metric] += batch_size * batch_res[metric]
                 
-                epe_xyz['x'].append(batch_res['epe_x'])
-                epe_xyz['y'].append(batch_res['epe_y'])
-                epe_xyz['z'].append(batch_res['epe_z'])
 
                 ## evaluate the foreground segmentation precision and recall
-                if args.model in ['cmflowt_o', 'cmflowt_ol', 'cmflow_t']:
+                if args.model in ['cmflow_t']:
                     seg_res = eval_motion_seg(pred_m, mask)
                     for metric in seg_res:
                         seg_metric[metric] += batch_size * seg_res[metric]
@@ -179,7 +175,7 @@ def eval_one_epoch_seq(args, net, eval_loader, textio):
         pose_metric[metric] = pose_metric[metric]/num_pcs
 
     textio.cprint('###The inference speed is %.3fms per frame###'%(infer_time*1000/num_pcs))
-    return sf_metric, seg_metric, pose_metric, gt_trans_all, pre_trans_all, epe_xyz
+    return sf_metric, seg_metric, pose_metric, gt_trans_all, pre_trans_all
 
 
 

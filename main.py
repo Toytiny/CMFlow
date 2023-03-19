@@ -45,7 +45,7 @@ def _init_(args):
     if not os.path.exists('checkpoints/' + args.exp_name + '/' + 'loss_train'):
         os.makedirs('checkpoints/' + args.exp_name + '/' + 'loss_train')
     os.system('cp main.py checkpoints' + '/' + args.exp_name + '/' + 'main.py.backup')
-    os.system('cp config.py checkpoints' + '/' + args.exp_name + '/dataset/vod.py')
+    os.system('cp configs.yaml checkpoints' + '/' + args.exp_name + 'configs.yaml.backup')
 
 
 def test(args, net, test_loader, textio):
@@ -133,9 +133,9 @@ def train(args, net, train_loader, val_loader, textio):
 
         textio.cprint('==starting evaluation on the validation set==')
         if args.dataset == 'vodClipDataset':
-            sf_metric,_,_,_,_,_ = eval_one_epoch_seq(args, net, val_loader, textio)
+            sf_metric,_,_,_,_ = eval_one_epoch_seq(args, net, val_loader, textio)
         else:
-            sf_metric, _, _, _, _,_ = eval_one_epoch(args, net, val_loader, textio)
+            sf_metric, _, _, _, _ = eval_one_epoch(args, net, val_loader, textio)
         eval_score = sf_metric['rne']
         val_score_ls[epoch] = eval_score
         textio.cprint('mean RNE score: %f'%eval_score)

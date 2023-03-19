@@ -113,7 +113,7 @@ def eval_one_epoch(args, net, eval_loader, textio):
     
     gt_trans_all = torch.zeros((len(eval_loader)*eval_loader.batch_size,4,4)).cuda()
     pre_trans_all = torch.zeros((len(eval_loader)*eval_loader.batch_size,4,4)).cuda()
-
+    infer_time = 0
 
     for i, data in tqdm(enumerate(eval_loader), total = len(eval_loader)):
 
@@ -129,7 +129,6 @@ def eval_one_epoch(args, net, eval_loader, textio):
 
         batch_size = pc1.size(0)
         vel1 = ft1[:,0]
-        infer_time = 0
         
         with torch.no_grad():
             # start point for inference

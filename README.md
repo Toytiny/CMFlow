@@ -28,9 +28,10 @@ For technical details, please refer to our paper on CVPR 2023:
 </p>
 
 ## News
- - [2023-02] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
- - [2023-03] Our paper can be found on [arXiv](https://arxiv.org/pdf/2303.00462.pdf). Supplementary can be found [here](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing). Project page is built [here](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html). 
- - [2023-03] Our code has been released. Please see [GETTING_STARTED](./src/GETTING_STARTED.md) for the guidelines.
+ - [2023-02-28] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
+ - [2023-03-03] Our paper can be found on [arXiv](https://arxiv.org/pdf/2303.00462.pdf). Supplementary can be found [here](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing). Project page is built [here](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html). 
+ - [2023-03-15] Our code has been released. Please see [GETTING_STARTED](./src/GETTING_STARTED.md) for the guidelines.
+ - [2023-03-21] Our paper is selected as a highlight in [CVPR 2023](https://cvpr2023.thecvf.com/) (10% of the accepted papers).
 
 ## Citation
 If you find our work useful in your research, please consider citing:

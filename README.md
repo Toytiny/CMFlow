@@ -5,7 +5,6 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2303.00462-b31b1b.svg)](https://arxiv.org/abs/2303.00462)
 [![ ](https://img.shields.io/youtube/views/PjKgznDizhI?label=YouTube&style=flat)](https://www.youtube.com/watch?v=PjKgznDizhI&feature=youtu.be) 
-![code visitors](https://visitor-badge.glitch.me/badge?page_id=Toytiny/CMFlow)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Toytiny/CMFlow/blob/master/LICENSE)  [![GitHub](https://img.shields.io/website?label=Project%20Page&up_message=link&url=https://toytiny.github.io/publication/22-raflow-ral/index.html)](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html)
 
 <p align="center">
@@ -21,7 +20,7 @@ For technical details, please refer to our paper on CVPR 2023:
 <br/>
 [Fangqiang Ding](https://toytiny.github.io/), [Andras Palffy](https://scholar.google.co.uk/citations?user=_IIml4sAAAAJ&hl=en), [Dariu M. Gavrila](http://www.gavrila.net/), [Chris Xiaoxuan Lu](https://christopherlu.github.io/)
 <br/>
-[[arXiv]](https://arxiv.org/pdf/2303.00462.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html) [[supp]](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing)
+[[arXiv]](https://arxiv.org/pdf/2303.00462.pdf) [[demo]](https://youtu.be/PjKgznDizhI) [[page]](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html) [[supp]](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Ding_Hidden_Gems_4D_CVPR_2023_supplemental.pdf)  [[video]](https://youtu.be/hHgzBhy6NVQ)
 
 <p align="left">
 <img src='./src/openfig.png' width="500">
@@ -29,21 +28,23 @@ For technical details, please refer to our paper on CVPR 2023:
 
 ## News
  - [2023-02-28] Our paper is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/) 🎉.
- - [2023-03-03] Our paper can be found on 👉 [arXiv](https://arxiv.org/pdf/2303.00462.pdf). Supplementary can be found [here](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing). Project page is built [here](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html). 
+ - [2023-03-03] Our paper can be seen here 👉 [arXiv](https://arxiv.org/pdf/2303.00462.pdf). Supplementary can be found [here](https://drive.google.com/file/d/1Iewcqnjzecge2ePBM8k2tg-85LX5xs3N/view?usp=sharing). Project page is built [here](https://toytiny.github.io/publication/23-cmflow-cvpr/index.html). 
  - [2023-03-15] Our code has been released. Please see 👉 [GETTING_STARTED](./src/GETTING_STARTED.md) for the guidelines.
  - [2023-03-21] Our paper is selected as a highlight 🎉 in [CVPR 2023](https://cvpr2023.thecvf.com/) (10% of the accepted papers).
  - [2023-05-08] Our poster to CVPR 2023 is uploaded. Please download it 👉 [here](./src/poster_cvpr23_hidden_gems.pdf)
+  - [2023-05-25] Our presentation video to CVPR 2023 is uploaded. Please watch it 👉 [here](https://youtu.be/hHgzBhy6NVQ)
 ## Citation
 If you find our work useful in your research, please consider citing:
 
 
 ```shell
-@inproceedings{ding2023hidden,
-  title={Hidden Gems: 4D Radar Scene Flow Learning Using Cross-Modal Supervision},
-  author={Ding, Fangqiang and Palffy, Andras and Gavrila, Dariu M. and Lu, Chris Xiaoxuan},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={1-10},
-  year={2023} 
+@InProceedings{Ding_2023_CVPR,
+    author    = {Ding, Fangqiang and Palffy, Andras and Gavrila, Dariu M. and Lu, Chris Xiaoxuan},
+    title     = {Hidden Gems: 4D Radar Scene Flow Learning Using Cross-Modal Supervision},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {9340-9349}
 }
 ```
 

@@ -144,11 +144,15 @@ We provide our trained models under three folders in `checkpoints/` with an affi
 
 To evaluate the trained CMFlow (or RaFlow) models on the test set, please run:
 ```
-python main.py --eval --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$ --model cmflow (raflow)
+python main.py --eval --dataset_path $DATA_PATH$ --exp_name cmflow_cvpr --model cmflow (raflow)
 ``` 
 To evaluate the trained CMFlow (T) model on the test set, please run:
 ```
-python main.py --eval --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$ --model cmflow_t --dataset vodClipDataset
+python main.py --eval --dataset_path $DATA_PATH$ --exp_name cmflow_t_cvpr --model cmflow_t --dataset vodClipDataset
+``` 
+To evaluate the trained CMFlow (T) model trained with extra unannotated data on the test set, please run:
+```
+python main.py --eval --dataset_path $DATA_PATH$ --exp_name cmflow_t_ed_cvpr --model cmflow_t --dataset vodClipDataset
 ``` 
 Once the evaluation is completed, the results on different metrics will be printed. If you want to save the model outputs, please add `--save_res` in the command. The results will be saved at `checkpoints/$EXP_NAME$/results/`. To enable the visualization of the estimated scene flow and motion segmentation in BEV, please add `--vis` in the command. The visualization figures will be saved under `checkpoints/$EXP_NAME$/test_vis_flow` and `.../test_vis_seg`. For scene flow visualization, the corresponding color wheel is `checkpoints/flow_encoding.png`. In the motion segmentation visulization figures, organge indicates moving points while blue is static. 
 

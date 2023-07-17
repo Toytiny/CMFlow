@@ -32,7 +32,8 @@ For technical details, please refer to our paper on CVPR 2023:
  - [2023-03-15] Our code has been released. Please see 👉 [GETTING_STARTED](./src/GETTING_STARTED.md) for the guidelines.
  - [2023-03-21] Our paper is selected as a highlight 🎉 in [CVPR 2023](https://cvpr2023.thecvf.com/) (10% of the accepted papers).
  - [2023-05-08] Our poster to CVPR 2023 is uploaded. Please download it 👉 [here](./src/poster_cvpr23_hidden_gems.pdf)
-  - [2023-05-25] Our presentation video to CVPR 2023 is uploaded. Please watch it 👉 [here](https://youtu.be/hHgzBhy6NVQ)
+ - [2023-05-25] Our presentation video to CVPR 2023 is uploaded. Please watch it 👉 [here](https://youtu.be/hHgzBhy6NVQ)
+ - [2023-07-18] We release our model trained with an extra amount of unlabeled data provided by the [VoD](https://github.com/tudelft-iv/view-of-delft-dataset/tree/main) dataset. Please try to following 👉 [MODEL_EVALUATION](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md#4-model-evaluation).
 ## Citation
 If you find our work useful in your research, please consider citing:
 
